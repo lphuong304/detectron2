@@ -21,7 +21,7 @@ class VisualizationDemo(object):
             parallel (bool): whether to run the model in different processes from visualization.
                 Useful since the visualization logic can be slow.
         """
-        MetadataCatalog.get("dataset_test12").thing_classes = ['']
+        MetadataCatalog.get("dataset_test").thing_classes = ['']
         self.metadata =MetadataCatalog.get("dataset_test")
         #self.metadata = 
         self.cpu_device = torch.device("cpu")
